@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="HardwareStore.Common/HardwareStore.Common.csproj" />
+  <Project Path="HardwareStore.Console/HardwareStore.Console.csproj" />
+</Solution>
