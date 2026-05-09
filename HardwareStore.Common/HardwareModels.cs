@@ -21,14 +21,25 @@ namespace HardwareStore.Common
     {
         public int Cores { get; set; }
         public double Frequency { get; set; }
-
-        // Статичне поле для підрахунку створених об'єктів (вимога ЛР)
         public static int Count;
 
         public Processor(string brand, double price, int cores) : base(brand, price)
         {
             Cores = cores;
             Count++;
+        }
+
+        // НОВИЙ МЕТОД для ЛР2
+        public static Processor CreateNew()
+        {
+            var rnd = new Random();
+            string[] brands = { "Intel i9", "AMD Ryzen 9", "Apple M3", "Intel i5", "AMD Threadripper" };
+            // Генеруємо випадковий процесор
+            return new Processor(
+                brands[rnd.Next(brands.Length)],
+                rnd.Next(5000, 50000),
+                rnd.Next(2, 64)
+            );
         }
     }
 
