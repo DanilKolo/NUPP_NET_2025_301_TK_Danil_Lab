@@ -2,4 +2,5 @@
   <Project Path="HardwareStore.Common/HardwareStore.Common.csproj" />
   <Project Path="HardwareStore.Console/HardwareStore.Console.csproj" />
   <Project Path="HardwareStore.Infrastructure/HardwareStore.Infrastructure.csproj" />
+  <Project Path="HardwareStore.Web/HardwareStore.Web.csproj" Id="7e198e91-2bd4-451c-8ab2-882ff938b636" />
 </Solution>
